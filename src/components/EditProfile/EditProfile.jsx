@@ -9,7 +9,13 @@ export default function EditProfile() {
   const [form] = Form.useForm()
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  const { user, loading, error } = useSelector((state) => state.auth)
+  const { user, loading, error, isAuthenticated } = useSelector((state) => state.auth)
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      navigate('/')
+    }
+  }, [isAuthenticated, navigate])
 
   useEffect(() => {
     if (user) {

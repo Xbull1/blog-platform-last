@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout/Layout'
 import PostList from './components/PostList/PostList'
 import CreateNewArticle from './components/CreateNewArticle/CreateNewArticle'
+import EditArticle from './components/EditArticle/EditArticle'
 import PostOpen from './components/PostOpen/PostOpen'
 import EditProfile from './components/EditProfile/EditProfile'
 import CreateAcc from './components/CreateAcc/CreateAcc'
@@ -20,7 +21,7 @@ function App() {
             <Route path="/post-list/page=?:" element={<PostList />} />
             <Route path="/article/:slug" element={<PostOpen />} />
             <Route path="/new-article" element={<CreateNewArticle />} />
-            <Route path="/article/:slug/edit" element={<CreateNewArticle />} />
+            <Route path="/article/:slug/edit" element={<EditArticle />} />
             <Route path="/edit-profile" element={<EditProfile />} />
             <Route path="/sign-in" element={<SignIn />} />
             <Route path="/sign-up" element={<CreateAcc />} />
