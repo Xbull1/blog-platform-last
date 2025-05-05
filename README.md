@@ -1,1 +1,1 @@
-https://blog-platform-kata-vert.vercel.app/
+https://blog-platform-last-two.vercel.app/
