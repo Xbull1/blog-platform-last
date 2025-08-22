@@ -16,7 +16,7 @@ export default function Header() {
   const headerAuthorization = (
     <div className={styles['header-authorization']}>
       <Link to="/sign-in" className={styles['sign-in']}>
-        Sign In 1111
+        Sign In 666
       </Link>
       <Link to="/sign-up" className={styles['sign-up']}>
         Sign Up
